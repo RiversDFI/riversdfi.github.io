@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Dawson's Awesome</title>
+    
+    <style>
+        body {
+            background: linear-gradient(180deg, hsl(25, 98%, 20%) 0%, #914002 15%, #c44700 90%);
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .top-logo-container {
+             display: flex;
+             justify-content: center;
+            padding-top: 5px;
+            width: 100%;
+        }
+
+        .top-logo {
+            width: 800px;           
+            height: 200px;          
+            border: 10px solid hwb(0 100% 0%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            width: 30%;
+            gap: 10rem;
+            padding: 12px 40px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        nav a:hover { opacity: 1; }
+
+        /* --- Story Page Content --- */
+
+        main {
+            padding: 80px 15%;
+            line-height: 1.8;
+        }
+
+        .story-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .story-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .story-section h2 {
+            color: #ffcaad;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .story-content {
+            font-size: 1.15rem;
+            opacity: 0.95;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 4px solid #fff;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .value-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .value-card h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 40px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 1024px) {
+            main { padding: 60px 8%; }
+            .top-logo { width: 90%; height: auto; }
+            nav ul { width: 80%; gap: 2rem; }
+            .values-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-logo-container">
+        <a href="index.html">
+            <img src="DAS_Web.jpg" alt="Dawson's Logo" class="top-logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="story.html">Story</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="story-section">
+            <h1>Born from the Flame</h1>
+            
+            <div class="story-content">
+                <p>Dawson's Awesome didn't start in a boardroom or a laboratory. It started in a backyard, under the glow of a summer sunset, surrounded by friends, family, and the unmistakable sound of a searing grill.</p>
+                
+                <p>For years, Dawson experimented with spices, vinegars, and sweeteners, looking for that "perfect" balance—the kind of sauce that doesn't just sit on top of the meat, but enhances every single bite. After hundreds of batches and thousands of taste tests, the **Original Grillin' Sauce** was born.</p>
+                
+                <h2>The Dawson Promise</h2>
+                <p>We believe that BBQ is a universal language. Whether you're a competition pitmaster or a weekend griller, our mission is to provide you with a sauce that honors the tradition of slow-cooked flavor without any of the artificial fillers. We keep it real, keep it bold, and keep it awesome.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Small Batches</h3>
+                    <p>We never mass-produce. Every bottle is crafted in limited runs to ensure the flavor profile remains exactly as Dawson intended.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Real Ingredients</h3>
+                    <p>No high-fructose corn syrup. No fake smoke. Just premium ingredients blended for a natural, smoky finish.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Family Owned</h3>
+                    <p>When you buy a bottle of Dawson's Awesome, you're supporting a family legacy built on a love for great food.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dawson's Awesome. All Rights Reserved. <br> From our grill to yours.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

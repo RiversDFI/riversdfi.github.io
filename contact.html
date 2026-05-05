@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dawson's Awesome</title>
+    
+    <style>
+        body {
+            background: linear-gradient(180deg, hsl(25, 98%, 20%) 0%, #914002 15%, #c44700 90%);
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .top-logo-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            width: 100%;
+        }
+
+        .top-logo {
+            width: 800px;           
+            height: 200px;          
+            border: 10px solid hwb(0 100% 0%);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            width: 30%;
+            gap: 10rem;
+            padding: 12px 40px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        nav a:hover { opacity: 1; }
+
+        /* --- Contact Page Specific Styles --- */
+
+        main {
+            padding: 60px 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-container {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            width: 100%;
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        .contact-info p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .detail-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 12px;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .contact-form input::placeholder, 
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .contact-form button {
+            background: #fff;
+            color: #914002;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+            .top-logo { width: 90%; height: auto; }
+            nav ul { width: 80%; gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-logo-container">
+        <a href="index.html">
+            <img src="DAS_Web.jpg" alt="Dawson's Logo" class="top-logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="story.html">Story</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have a question about an order? Want to stock Dawson's Awesome in your shop? Or just want to talk BBQ? Drop us a line.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item"><strong>Email:</strong> hello@dawsonsawesome.com</div>
+                    <div class="detail-item"><strong>Location:</strong> Hand-crafted in the USA</div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dawson's Awesome. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
